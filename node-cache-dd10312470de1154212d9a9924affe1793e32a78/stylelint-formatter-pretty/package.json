@@ -1,0 +1,69 @@
+{
+  "name": "stylelint-formatter-pretty",
+  "version": "4.0.0",
+  "description": "A pretty Stylelint formatter.",
+  "license": "MIT",
+  "repository": "github:mrcgrtz/stylelint-formatter-pretty",
+  "funding": [
+    {
+      "type": "kofi",
+      "url": "https://ko-fi.com/mrcgrtz"
+    },
+    {
+      "type": "liberapay",
+      "url": "https://liberapay.com/mrcgrtz/"
+    }
+  ],
+  "author": {
+    "name": "Marc Görtz",
+    "email": "git@marcgoertz.de",
+    "url": "https://marcgoertz.de/"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "type": "module",
+  "exports": "./index.js",
+  "scripts": {
+    "test": "xo && c8 ava",
+    "coverage": "c8 report --reporter=lcov"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "stylelint",
+    "stylelint-formatter",
+    "formatter",
+    "reporter",
+    "lint",
+    "validate"
+  ],
+  "dependencies": {
+    "ansi-escapes": "^6.2.0",
+    "log-symbols": "^6.0.0",
+    "picocolors": "^1.0.0",
+    "plur": "^5.1.0",
+    "string-width": "^7.0.0",
+    "supports-hyperlinks": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "^6.0.1",
+    "c8": "^8.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^15.2.0",
+    "strip-ansi": "^7.1.0",
+    "xo": "^0.56.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=16.0.0"
+  },
+  "lint-staged": {
+    "*.js": "xo --fix"
+  },
+  "xo": {
+    "rules": {
+      "unicorn/no-array-for-each": "off"
+    }
+  }
+}
