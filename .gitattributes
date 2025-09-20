@@ -1,6 +1,0 @@
-ceph-haproxy-v2.3.iso filter=lfs diff=lfs merge=lfs -text
-ceph-keepalived-v2.1.5.iso filter=lfs diff=lfs merge=lfs -text
-ceph-v17.iso filter=lfs diff=lfs merge=lfs -text
-grafana-loki-v2.4.0.iso filter=lfs diff=lfs merge=lfs -text
-grafana-promtail-v2.4.0.iso filter=lfs diff=lfs merge=lfs -text
-maxwo-snmp-notifier-v1.2.1.iso filter=lfs diff=lfs merge=lfs -text
